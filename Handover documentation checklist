@@ -1,50 +1,66 @@
-Handover documentation
+# Handover documentation 
+
 Here's a list of things I find useful to check off when writing handover documentation for source code.
 
-General sanity checks
+## General sanity checks
+
 These get checked at the end, but they're at the front of the document because they're good to keep in mind the whole time
 
- Do these instructions work cross-platform? If not, which platform do they work on?
- If the source of truth is not this document, should some of the questions be answered with links (to eg confluence/other repos)
- Does the readme repeat information? (repeating information means it's likely to be longer and less likely to be changed correctly)
- If the information that is documented changes, will the maintainer know to update the readme?
- Should the source code include comments to remind the programmer to update the readme?
- Should the PR template include a reminder to update the readme?
- Is there anything in the project readme that should be moved somewhere else?
-Build
- What are the prerequisite build tools I need to have installed? (npm, JVM, etc). What versions?
- How do I build the source?
- What is the versioning strategy?
-Execution
- How do I run the tests?
- If I can stand it up locally, how do I do that?
-Structure and rationale
- When this is deployed, how does it fit into the rest of the ecosystem?
- If I can run it locally, what is different about the deployment infrastructure?
- What components are deployed from this repository?
- What components from other repositories are required? (include links to the other repositories)
- How is the software configured? (often there's more than one config source, eg env vars set during deployment, a secret store, config files during build etc).
- How can those configurations be changed?
- What kind of tests are there? (integration/unit/contract, etc).
- What is intentionally covered by the tests?
- What is intentionally not covered by the tests?
- What is the structure of the modules in the source?
- What is the intention behind the code layout? (which concerns have been separated by this design)
-Other documentation
- Is there any documentation other than the source code? (examples might include a link to something like a list of ADRs, architecture review meetings, flow diagrams, etc)
- Where is the project issue tracker? (ideally a link to all the issues associated with this repository)
-Deployment
- What are the deployment environments?
- How do I deploy / release?
- How are the versions tracked?
-Day to day
- How do I know what is currently deployed to each environment?
- How do I tell whether it is working / not working?
- What do I do if it isn't working?
-General
-These things are useful if you're not handing over the whole project to a new team, and are instead using the documentation for bringing in new team members. Usually these are links to ways-of-working documents in a wiki or team space somewhere.
+- [ ] Do these instructions work cross-platform? If not, which platform do they work on? 
+- [ ] If the source of truth is not this document, should some of the questions be answered with links (to eg confluence/other repos)
+- [ ] Does the readme repeat information? (repeating information means it's likely to be longer and less likely to be changed correctly)
+- [ ] If the information that is documented changes, will the maintainer know to update the readme?
+  - [ ] Should the source code include comments to remind the programmer to update the readme?
+  - [ ] Should the PR template include a reminder to update the readme?
+- [ ] Is there anything in the project readme that should be moved somewhere else?
 
- What does the team development cycle look like? PRs, code reviews and walkthroughs?
- Which team owns this code?
- Is there an on-call list for this project?
- How can I contact them?
+## Build
+
+- [ ] What are the prerequisite build tools I need to have installed? (npm, JVM, etc). What versions?
+- [ ] How do I build the source?
+- [ ] What is the versioning strategy?
+
+## Execution
+- [ ] How do I run the tests?
+- [ ] If I can stand it up locally, how do I do that?
+
+## Structure and rationale
+
+- [ ] When this is deployed, how does it fit into the rest of the ecosystem?
+   - [ ] If I can run it locally, what is different about the deployment infrastructure?
+- [ ] What components are deployed from this repository?
+- [ ] What components from other repositories are required? (include links to the other repositories)
+- [ ] How is the software configured? (often there's more than one config source, eg env vars set during deployment, a secret store, config files during build etc). 
+    - [ ] How can those configurations be changed?
+- [ ] What kind of tests are there? (integration/unit/contract, etc).
+    - [ ] What is intentionally covered by the tests?
+    - [ ] What is intentionally not covered by the tests?
+- [ ] What is the structure of the modules in the source?
+- [ ] What is the intention behind the code layout? (which concerns have been separated by this design)
+
+## Other documentation
+
+- [ ] Is there any documentation other than the source code? (examples might include a link to something like a list of [ADRs](https://adr.github.io/), architecture review meetings, flow diagrams, etc)
+- [ ] Where is the project issue tracker? (ideally a link to all the issues associated with this repository)
+
+## Deployment
+- [ ] What are the deployment environments? 
+- [ ] How do I deploy / release?
+- [ ] How are the versions tracked?
+
+## Day to day
+
+- [ ] How do I know what is currently deployed to each environment?
+- [ ] How do I tell whether it is working / not working?
+- [ ] What do I do if it isn't working?
+
+## General
+
+These things are useful if you're not handing over the whole project to a new team, 
+and are instead using the documentation for bringing in new team members. Usually these 
+are links to ways-of-working documents in a wiki or team space somewhere.
+
+- [ ] What does the team development cycle look like? PRs, code reviews and walkthroughs? 
+- [ ] Which team owns this code?
+- [ ] Is there an on-call list for this project?
+    - [ ] How can I contact them?
